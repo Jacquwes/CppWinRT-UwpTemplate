@@ -1,0 +1,8 @@
+namespace UwpTemplate
+{
+    [default_interface]
+    runtimeclass Home : Windows.UI.Xaml.Controls.Page
+    {
+        Home();
+    }
+}

@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="UwpTemplate.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpTemplate"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="Dark">
+
+    <NavigationView
+        x:Name="NavView"
+        PaneTitle="Uwp Template" BackRequested="NavView_BackRequested" ItemInvoked="NavView_ItemInvoked">
+        <NavigationView.Background>
+            <AcrylicBrush
+                BackgroundSource="HostBackdrop"
+                TintColor="{ThemeResource SystemColorBackgroundColor}"
+                TintOpacity="0.3"/>
+        </NavigationView.Background>
+        <NavigationView.MenuItems>
+            <NavigationViewItem
+                Content="Home"
+                Icon="Home"
+                Tag="UwpTemplate.Home"/>
+        </NavigationView.MenuItems>
+
+        <Frame x:Name="MainFrame"/>
+
+    </NavigationView>
+
+</Page>

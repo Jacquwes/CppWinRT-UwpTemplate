@@ -1,0 +1,9 @@
+namespace UwpTemplate
+{
+    [default_interface]
+    runtimeclass Settings : Windows.UI.Xaml.Controls.Page
+    {
+        Settings();
+        Int32 MyProperty;
+    }
+}
